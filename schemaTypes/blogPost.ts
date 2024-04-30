@@ -9,9 +9,10 @@ const blogPost = defineType({
     {name: 'slug', title: 'Slug', type: 'slug', options: {source: 'title', maxLength: 96}},
     {name: 'publishedAt', title: 'Published at', type: 'datetime'},
     {name: 'minRead', title: 'Minutes Read', type: 'number'},
-    {name: 'mainImage', title: 'Main Image', type: 'image', options: {hotspot: true}},
-    {name: 'secondImage', title: 'Second Image', type: 'image', options: {hotspot: true}},
+    {name: 'mainImage', title: 'MainImage', type: 'image', options: {hotspot: true}},
+    {name: 'secondImage', title: 'SecondImage', type: 'image', options: {hotspot: true}},
     {name: 'body', title: 'Body', type: 'array', of: [{type: 'block'}]},
+    {name: 'shortDesc', title: 'ShortDescription', type: 'string'},
     {
       name: 'author',
       title: 'Author',
